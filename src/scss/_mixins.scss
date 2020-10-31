@@ -1,0 +1,27 @@
+$minsize: 480px;
+$size1: 580px;
+$size2: 822px;
+$size3: 1180px;
+
+@mixin responsive($width) {
+    @if $width == "size1"{
+        @media screen and (min-width: $minsize) and (max-width: $size1){
+            @content;
+        }
+    }
+    @else if $width == "size2"{
+        @media screen and (min-width: $size1) and (max-width: $size2){
+            @content;
+    }
+}
+    @else if $width == "size3"{
+        @media screen and (min-width: $size2) and (max-width: $size3){
+            @content;
+        }
+    }
+    @else if $width == "size4"{
+        @media screen and (min-width: $size3) and (max-width: 2000px){
+            @content;
+        }
+    }
+}

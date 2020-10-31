@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="HyunJu Kim" />
+    <meta name="description" content="SNACAT retention test" />
+    <link rel="stylesheet" href="dist/css/reset.css" />
+    <link rel="stylesheet" href="dist/css/styles.css" />
+    <title>SNACAT</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <img class="main__image" src="dist/images/image4.png" />
+      <div class="apply">
+        <form class="gform" 
+          name="sub1"
+          method="POST" 
+          data-email="example@email.net" 
+          action="https://script.google.com/macros/s/AKfycbxc4PXtBm9IzuyUGpLu1ZVhlaRiMsahGH3M0yoUZStToFQ9EU4/exec">
+          <div class="apply__input">
+            <div class="apply__title">이름</div>
+            <input type="text" name="name" id="name"/>
+          </div>
+          <div class="apply__input">
+            <div class="apply__title">이메일</div>
+              <input
+                type="text"
+                name="email"
+                id="email"
+              />
+            </div>
+           <div class="apply__input">
+             <div class="apply__title">전화번호</div>
+               <input
+                type="text"
+                name="phone"
+                id="phone"
+              />
+          </div>
+          <button type="submit" class="submit">베타 서비스 신청하기</button>
+        </form>
+      </div>
+    </div>
+    <script src="apply.js"></script>
+  </body>
+</html>
