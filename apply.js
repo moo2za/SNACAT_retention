@@ -16,11 +16,11 @@ function erchk(event) {
         return false;
     }
     else{
-    document.sub1.submit();
-    alert('제출이 완료되었습니다.');
+        window.open('', '_self', '').close();
+        alert('제출이 완료되었습니다. 확인 후 안내메일을 발송해드리겠습니다.');
+        self.close();
     }
 }
-
 
 
 function init() {
