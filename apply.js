@@ -1,4 +1,5 @@
-const button = document.querySelector(`button`);
+const button = document.querySelector(`button`),
+        form = document.querySelector(`form`);
 
 
 function erchk(event) {
@@ -16,8 +17,10 @@ function erchk(event) {
         return false;
     }
     else{
+        document.sub1.action="https://script.google.com/macros/s/AKfycbxc4PXtBm9IzuyUGpLu1ZVhlaRiMsahGH3M0yoUZStToFQ9EU4/exec";
         document.sub1.submit();
         alert('제출이 완료되었습니다. 확인 후 안내메일을 발송해드리겠습니다.');
+        window.open("index.html", "_self").close();
     }
 }
 
